@@ -1,0 +1,1 @@
+import java.io.*;import java.util.*;public class EmailDomainCounter{public static void main(String[]args)throws Exception{BufferedReader br=new BufferedReader(new FileReader("emails.txt"));HashMap<String,Integer>m=new HashMap<>();String s;while((s=br.readLine())!=null){String d=s.substring(s.indexOf("@")+1);m.put(d,m.getOrDefault(d,0)+1);}System.out.println(m);}}

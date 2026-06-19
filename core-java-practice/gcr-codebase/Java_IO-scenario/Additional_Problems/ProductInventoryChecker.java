@@ -1,0 +1,1 @@
+import java.io.*;public class ProductInventoryChecker{public static void main(String[]args)throws Exception{BufferedReader br=new BufferedReader(new FileReader("inventory.txt"));String s;while((s=br.readLine())!=null){String[]p=s.split("-");if(Integer.parseInt(p[1])==0)System.out.println(p[0]+" is out of stock");}}}

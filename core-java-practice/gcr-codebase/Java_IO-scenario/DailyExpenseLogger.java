@@ -1,0 +1,1 @@
+import java.io.*;import java.util.*;public class DailyExpenseLogger{public static void main(String[] args)throws Exception{Scanner sc=new Scanner(System.in);BufferedWriter bw=new BufferedWriter(new FileWriter("expenses.txt",true));System.out.print("Category: ");String c=sc.nextLine();System.out.print("Amount: ");int a=sc.nextInt();bw.write(c+" - "+a);bw.newLine();bw.close();}}

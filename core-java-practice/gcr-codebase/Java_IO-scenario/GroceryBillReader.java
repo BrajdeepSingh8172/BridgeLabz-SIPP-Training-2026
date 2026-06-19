@@ -1,0 +1,1 @@
+import java.io.*;public class GroceryBillReader{public static void main(String[] args)throws Exception{BufferedReader br=new BufferedReader(new FileReader("bill.txt"));String s;int count=0;while((s=br.readLine())!=null){System.out.println(s);count++;}System.out.println("Total lines = "+count);br.close();}}
